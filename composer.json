@@ -1,0 +1,33 @@
+{
+    "name": "waleriano/curso-php-pro",
+    "description": "curso php profissional",
+    "authors": [
+        {
+            "name": "Waleriano Magalhaes",
+            "email": "waleriano.magalhaes@farmaciaindiana.com.br"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.6"
+    },
+    "autoload": {
+        "files":[
+            "app/helpers/constants.php",
+            "app/helpers/helpers.php",
+            "app/helpers/redirect.php",
+            "app/helpers/validate.php",
+            "app/helpers/validations.php",
+            "app/router/router.php",
+            "app/core/controller.php",
+            "app/database/connect.php",
+            "app/database/fetch.php",
+            "app/database/create.php",
+            "app/database/update.php",
+            "app/database/delete.php"
+        ],
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+    
+}

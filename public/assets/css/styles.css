@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wgnt@400;700&display=swap");
+
+html,
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+    border:  3px solid green;
+    padding: 10px;
+}
+
+#box-login {
+    margin: 0 auto;
+    background: tomato;
+    padding: 5px;
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.button-green {
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+ul#menu_list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+ul#menu_list li {
+    margin-right: 15px;
+}
+
+#status_login {
+    background-color: #efefef;
+}
+
+ul#users-home{
+    list-style: none;
+    padding: 0;
+}
+
+ul#users-home li {
+    background-color: aquamarine;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.user-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
