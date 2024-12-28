@@ -14,5 +14,6 @@
     <div class="container">
     <?=$this->section('content')?>
     </div>
+    <?=$this->section('scripts')?>
 </body>
 </html>

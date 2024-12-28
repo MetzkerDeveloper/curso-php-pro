@@ -2,8 +2,6 @@
 
 namespace app\controllers;
 
-use LDAP\Result;
-
 class User
 {
     public function create()

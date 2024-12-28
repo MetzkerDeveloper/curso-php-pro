@@ -10,6 +10,7 @@ return [
  'GET'  => [
    '/login' => 'Login@index',
     '/' => 'Home@index',
+    '/users' => 'Users@index',
     '/user/create' => 'User@create',
     '/user/[0-9]+' => 'User@show',
     '/edit/user/[0-9]+' => 'User@edit',

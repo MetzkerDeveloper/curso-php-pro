@@ -49,4 +49,32 @@
   </table>
 </div>
 
+<?php $this->start('scripts') ?>
+    <!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
 
+        axios.defaults.headers = {
+            responseType: 'json',
+            responseEncoding: 'utf8',
+            xsrfCookieName: 'XSRF-TOKEN',
+            xsrfHeaderName: 'X-XSRF-TOKEN',
+            'X-Requested-With': 'XMLHttpRequest',
+            'content-type': 'Application/json'
+
+        }
+
+
+        async function loadUser(){
+            try {
+                const {data} =  await axios.get('/users');
+                console.log(data);
+
+            }catch (e) {
+                console.log(e);
+            }
+        }
+        loadUser();
+    </script>
+
+<?php $this->stop() ?>
